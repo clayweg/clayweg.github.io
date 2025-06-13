@@ -53,7 +53,7 @@ const mockLogs = [
     document.getElementById('rule-form').reset();
   });
   
-  let actionCounts = { Allow: 3, Block: 2 };
+  let actionCounts = { Allowed: 3, Blocked: 2 };
   const pieCtx = document.getElementById('pieChart').getContext('2d');
   const pieChart = new Chart(pieCtx, {
     type: 'pie',
