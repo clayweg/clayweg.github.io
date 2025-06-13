@@ -1,292 +1,88 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-body {
-    color: #fff;
-}
-
-.sub-title {
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-}
-
-#header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4)0%, rgba(255, 255, 255, 0.2)100%), url(images/img3.png);
-    background-size: cover;
-    background-attachment: fixed;
-    span {
-        color: #ff00ae;
-}
-}
-
-.container {
-    padding: 0 2%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: auto;
-    padding-top: 20px;
-}
-
-.logo img {
-    background-color: #ffdab9;
-    border-radius: 50%;
-    width: 100px;
-}
-
-nav ul li {
-    padding: 0 10px;
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff00ae;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-    width: 105%;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.head-col-1 {
-    flex-basis: 50%;
-    margin-top: 10%;
-    font-size: 25px;
-}
-
-.head-col-1 h1 {
-    font-size: 60px;
-}
-
-.head-col-1 p {
-    margin-top: 10px;
-}
-
-.head-col-2 {
-    flex-basis: 50%;
-}
-
-
-/* ====about==== */
-
-#about {
-    width: 100%;
-    height: 110vh;
-    padding: 80px;
-    background-image: linear-gradient(to bottom, #f4978e 0%, rgba(0, 0, 0, 0.5)70%, rgba(0, 0, 0, 0.8)100%), url("images/img2.jpg");
-    background-size: cover;
-    color: #dddddd;
-}
-
-.about-col-1 {
-    flex-basis: 50%;
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 0 10px;
-    max-height: 36vh;
-}
-
-.about-col-2 {
-    flex-basis: 45%;
-    backdrop-filter: blur(6px);
-    border-radius: 15px;
-    padding: 0 10px 10px;
-}
-.about-col-1 p{
-    text-indent: 50px;
-    font-size: 18px;
-    margin-top: 15px;
-}
-
-.tab-titles {
-    display: flex;
-    margin: 50px 0 40px ;
-}
-
-.tab-links {
-    color: #f0f0f0;
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff00ae;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after {
-    color: #fff;
-    width: 50%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin: 15px 0;
-}
-
-.tab-contents ul li span {
-    color: #f6d992;
-    font-size: 18px;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
-}
-
-
-
-/* ====contact==== */
-
-#contact {
-    background-color: #f8ad9d;
-    height: 100vh;
-}
-
-#contact .container {
-    padding-top: 100px;
-}
-
-.contact-left {
-    flex-basis: 35%;
-}
-
-.contact-right {
-    flex-basis: 60%;
-}
-
-.contact-left p {
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-.contact-left p i {
-    color: #ff00ae;
-    margin-right: 15px;
-    font-size: 20px;
-}
-
-.social-icons {
-    margin-top: 30px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #f08080;
-    display: inline-block;
-    transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-    color: #ff00ae;
-    transform: scale(1.2);
-}
-
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px #ff00ae;
-    padding: 14px 50px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-}
-
-.btn:hover {
-    background: #ff00ae;
-}
-
-.btn.btn2 {
-    display: inline-block;
-    background: #ff00ae;
-}
-
-.contact-right {
-    width: 100%;
-
-}
-
-form input, form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 25px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 8px;
-}
-
-form .btn2 {
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    background: #262626;
-    font-weight: 300;
-}
-
-#msg {
-    color: #445D48;
-    margin-top: -40px;
-    display: block;
-}
+    body {
+        font-family: Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #bbb;
+    }
+    
+    header {
+        background-color: #254733;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .panel {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        flex: 1 1 300px;
+        max-width: 500px;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    .form-row {
+        margin-bottom: 0.8rem;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 0.2rem;
+    }
+    
+    input, select {
+        width: 100%;
+        padding: 0.4rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        padding: 0.5rem 1rem;
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #1d4ed8;
+    }
+    
+    .chart-placeholder {
+        background-color: #e5e7eb;
+        border: 1px dashed #9ca3af;
+        padding: 2rem;
+        margin: 1rem 0;
+        text-align: center;
+        color: #374151;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+    
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
