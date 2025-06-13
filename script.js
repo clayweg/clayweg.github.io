@@ -89,10 +89,10 @@ const mockLogs = [
     }
   });
   function updateCharts(action, protocol) {
-    if (action === 'Allow') {
-      actionCounts.Allowed++;
-    } else {
+    if (action === 'Block') {
       actionCounts.Blocked++;
+    } else {
+      actionCounts.Allowed++;
     }
   
     if (protocolCounts[protocol] !== undefined) {
