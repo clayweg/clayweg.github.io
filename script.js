@@ -53,7 +53,7 @@ const mockLogs = [
     document.getElementById('rule-form').reset();
   });
   
-  let actionCounts = { Allowed: 3, Blocked: 2 };
+  let actionCounts = { Allow: 3, Block: 2 };
   const pieCtx = document.getElementById('pieChart').getContext('2d');
   const pieChart = new Chart(pieCtx, {
     type: 'pie',
@@ -89,7 +89,7 @@ const mockLogs = [
     }
   });
   function updateCharts(action, protocol) {
-    if (action === 'Allowed') {
+    if (action === 'Allow') {
       actionCounts.Allowed++;
     } else {
       actionCounts.Blocked++;
