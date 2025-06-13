@@ -1,9 +1,9 @@
 const mockLogs = [
-    { time: '08:15 AM', ip: '192.168.1.2', port: '443', protocol: 'TCP', action: 'Allowed' },
-    { time: '08:20 AM', ip: '10.0.0.5', port: '22', protocol: 'TCP', action: 'Blocked' },
-    { time: '08:35 AM', ip: '192.168.1.12', port: '53', protocol: 'UDP', action: 'Allowed' },
-    { time: '08:40 AM', ip: '172.16.0.9', port: '443', protocol: 'TCP', action: 'Blocked' },
-    { time: '08:50 AM', ip: '192.168.1.20', port: '80', protocol: 'TCP', action: 'Allowed' },
+    { time: '08:15:42 AM', ip: '192.168.1.2', port: '443', protocol: 'TCP', action: 'Allow' },
+    { time: '08:20:55 AM', ip: '10.0.0.5', port: '22', protocol: 'TCP', action: 'Block' },
+    { time: '08:35:53 AM', ip: '192.168.1.12', port: '53', protocol: 'UDP', action: 'Allow' },
+    { time: '08:40:24 AM', ip: '172.16.0.9', port: '443', protocol: 'TCP', action: 'Block' },
+    { time: '08:50:37 AM', ip: '192.168.1.20', port: '80', protocol: 'TCP', action: 'Allow' },
   ];
   
 
